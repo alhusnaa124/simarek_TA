@@ -2,8 +2,53 @@
 
 @section('content')
     <style>
+        /* Tambah jarak dasar */
         div.dataTables_filter {
             margin-bottom: 1rem;
+        }
+
+        /* Wrapper jarak kiri kanan */
+        .dataTables_wrapper {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            /* Semua elemen DataTables rata kiri */
+            .dataTables_wrapper .dataTables_filter,
+            .dataTables_wrapper .dataTables_length,
+            .dataTables_wrapper .dataTables_info,
+            .dataTables_wrapper .dataTables_paginate {
+                text-align: left !important;
+            }
+
+            /* Bungkus filter: rapih, 1 baris, rata kiri */
+            div.dataTables_filter {
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                justify-content: flex-start !important;
+                gap: 6px !important;
+                width: 100% !important;
+            }
+
+            /* Input search kecil */
+            div.dataTables_filter input {
+                width: 140px !important;
+            }
+
+            /* Dropdown kecil */
+            .dataTables_length select {
+                width: 70px !important;
+            }
+
+            /* Jarak kiri-kanan supaya tidak mepet */
+            .dataTables_length,
+            .dataTables_filter {
+                margin-left: 4px !important;
+                margin-right: 4px !important;
+            }
         }
     </style>
     {{-- alert --}}

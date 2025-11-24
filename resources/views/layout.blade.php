@@ -1,6 +1,7 @@
 <!-- resources/views/layouts/app.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,14 +21,27 @@
             margin: 0;
             min-height: 100vh;
         }
-        .content {
-            margin-left: 250px; /* Space for the sidebar */
-            flex-grow: 1;
-            width: calc(100% - 250px);
+
+        #sidebar {
+            width: 250px;
         }
-        
+
+        .content {
+            flex-grow: 1;
+            transition: margin-left .3s ease;
+            margin-left: 250px;
+        }
+
+        /* Jika sidebar tersembunyi (mobile), jangan beri margin-left */
+        @media (max-width: 768px) {
+            .content {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
     </style>
 </head>
+
 <body class="bg-gray-100">
 
     <!-- Sidebar -->
@@ -46,4 +60,5 @@
     @stack('scripts')
 
 </body>
+
 </html>

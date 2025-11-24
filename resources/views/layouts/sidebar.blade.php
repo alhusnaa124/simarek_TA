@@ -1,4 +1,6 @@
-<div id="sidebar" class="w-[250px] fixed h-screen p-4 overflow-y-auto shadow-md bg-blue-400 z-10 transform translate-x-0 transition-transform duration-300 ease-in-out">
+<div id="sidebar" class="w-[250px] fixed h-screen p-4 overflow-y-auto shadow-md bg-blue-400 z-10 
+    transform -translate-x-full md:translate-x-0 
+    transition-transform duration-300 ease-in-out">
     <h2 class="text-lg font-bold mb-4 text-white">Menu</h2>
 
     @if (auth()->check())

@@ -1,66 +1,89 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+SIMAREK
+Sistem Informasi Manajemen Rekapitulasi Pajak Bumi dan Bangunan (PBB)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi berbasis web yang dibangun menggunakan PHP, JavaScript, TailwindCSS, dan Laravel sebagai bagian dari Tugas Akhir dengan studi kasus di Desa Wonoyoso.
 
-## About Laravel
+🎯 Deskripsi Singkat
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+SIMAREK merupakan sistem informasi yang dirancang untuk membantu pemerintah desa dalam mengelola proses pendataan, distribusi, pembayaran, dan rekapitulasi Pajak Bumi dan Bangunan (PBB) agar lebih efisien, akurat, dan transparan.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Sistem ini mendukung alur kerja lapangan hingga bendahara dan admin, serta menampilkan laporan rekapitulasi yang dapat dipantau secara real-time.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+👥 Role Pengguna & Akses Fitur
+🔹 1. Admin
 
-## Learning Laravel
+Mengelola distribusi wajib pajak
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Melihat seluruh laporan rekapitulasi
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Mengelola data master (opsional: petugas, wilayah, kelompok)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Monitoring status distribusi (sudah / belum terdistribusi)
 
-## Laravel Sponsors
+🔹 2. Petugas Lapangan
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Mengelola distribusi untuk wilayah tugasnya
 
-### Premium Partners
+Mengelola data kelompok
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Mengelola pembayaran PBB
 
-## Contributing
+Mengelola formulir tarikan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Menginput setoran
 
-## Code of Conduct
+Melihat data wajib pajak hanya untuk wilayahnya
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Melakukan update status pembayaran sesuai hasil lapangan
 
-## Security Vulnerabilities
+🔹 3. Bendahara Desa
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Melihat data setoran petugas
 
-## License
+Memverifikasi setoran
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Mencetak bukti/kwitansi setelah verifikasi
+
+Melihat laporan rekap berdasarkan total SPPT dan setoran masuk
+
+🛠️ Teknologi yang Digunakan
+
+PHP 8+
+
+Laravel 11
+
+JavaScript
+
+TailwindCSS
+
+MySQL / MariaDB
+
+Laravel Breeze (Authentication)
+
+✨ Fitur Utama Sistem
+
+Manajemen Wajib Pajak
+
+Distribusi SPPT (sudah / belum)
+
+Kelompok keluarga wajib pajak
+
+Pembayaran & status lunas berdasarkan tahun
+
+Formulir tarikan pembayaran
+
+Input & verifikasi setoran petugas
+
+Rekapitulasi PBB per tahun & per wilayah
+
+Grafik pendapatan PBB per tahun
+
+Dashboard dinamis berdasarkan role
+
+Cetak bukti pembayaran
+
+📍 Studi Kasus
+
+Proyek ini dibuat untuk memenuhi Tugas Akhir dengan judul:
+
+“Sistem Informasi Manajemen Rekapitulasi Pajak Bumi dan Bangunan (PBB) Berbasis Website – Studi Kasus: Desa Wonoyoso.”
